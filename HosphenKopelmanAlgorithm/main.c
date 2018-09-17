@@ -182,9 +182,9 @@ void check_labelling(int **matrix, int m, int n) {
 
 int main(int argc, char **argv)
 {
-    const int m = 500;
-    const int n = 500;
-    int n_trials = 5000;
+    const int m = 10;
+    const int n = 10;
+    int n_trials = 1;
     float delta = 0.05;
     
     // allocate our matrix
@@ -220,8 +220,8 @@ int main(int argc, char **argv)
                 }
             }
         }
-        double dpc = double(percolatingClusters);
-        double dn = double(n);
+        double dpc = percolatingClusters;
+        double dn = n;
         double rat = dpc/dn;
         printf("%f %f\n",p,rat);
     }
